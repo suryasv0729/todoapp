@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .title{
+      text-align: center;
+      text-justify: center;
+      color: rgb(117, 72, 30);
+
+      }
+      .section{
+      display: flex;
+      justify-content: center;
+      }
+     
+      .todo-container {
+        /* height: 100vh; */
+        padding: 4.8rem 9.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+      }
+      .input {
+        height: 30px;
+        width: 400px;
+        border: solid 2px #a08766;
+      }
+
+      .lis {
+        display: grid;
+        grid-template-columns: 9fr 1fr 1fr;
+        column-gap: 20px;
+        list-style: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 15px 5px 15px 5px;
+
+        border: solid 2px #674b26;
+        align-items: center;
+        background-color: burlywood;
+      }
+      .lis p {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        overflow: hidden;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.4s;
+      }
+      .btn-trash,
+      .btn-check {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        
+      }
+      .add-btn{
+        height: 30px;
+        width: 40px;
+        border:solid 2px #3e2504 ;
+      }
+      .hide-list{
+        display: none;
+      }
+
+      .para-line{
+        text-decoration: line-through ;
+        text-decoration-thickness: 2px;
+        text-decoration-color: rgb(35, 24, 9);
+      }
+      h2{
+        margin-top: 30px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 class="title">
+      NOTEPANNU
+    </h2><span class="clear"><button>clr</button></span>
+    <div class="section">
+      
+    <div class="todo-container">
+      <div class="cont">
+        <form class="myform">
+        <input type="text" class="input" placeholder="enter your task" />
+        <button class="add-btn">+</button>
+      </form>
+        <div>
+        <div class="todo-list">
+          <div class="list">
+            <ul class="lists">
+              <!-- <li class="lis">
+                <p class="para">meet with julie at 6pm</p>
+                <button class="btn btn-trash">del</button>
+                <button class="btn btn-check">
+                   <ion-icon name="checkmark-outline"></ion-icon> done
+                </button>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="./script.js"></script>
+  </body>
+</html>
