@@ -42,10 +42,10 @@ const tform = document.querySelector(".myform");
         `  <li class="lis">
     <p class="para">${element}</p>
     <button class="btn btn-trash">
-      del
+    ✗
     </button>
     <button class="btn btn-check">
-      done
+    🗸
     </button>
   </li>`
       );
@@ -63,10 +63,10 @@ tform.addEventListener("submit", function (e) {
     `  <li class="lis">
     <p class="para">${inputtext.value}</p>
     <button class="btn btn-trash">
-      del
+    ✗
     </button>
     <button class="btn btn-check">
-      done
+    🗸
     </button>
   </li>`
   );
